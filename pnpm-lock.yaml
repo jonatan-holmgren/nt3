@@ -1,7 +1,7 @@
 lockfileVersion: '9.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 importers:
@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@astrojs/svelte':
         specifier: ^3.1.1
-        version: 3.1.1(astro@2.10.15(supports-color@7.2.0))(supports-color@7.2.0)(svelte@4.2.20)(typescript@5.9.3)(vite@4.5.14)
+        version: 3.1.1(astro@2.10.15)(svelte@4.2.20)(typescript@7.0.2)(vite@4.5.14)
       '@astrojs/tailwind':
         specifier: ^4.0.0
-        version: 4.0.0(astro@2.10.15(supports-color@7.2.0))(tailwindcss@3.4.19(yaml@2.9.1))
+        version: 4.0.0(astro@2.10.15)(tailwindcss@3.4.19(yaml@2.9.1))
       astro:
         specifier: ^2.10.12
-        version: 2.10.15(supports-color@7.2.0)
+        version: 2.10.15
       svelte:
         specifier: ^4.0.0
         version: 4.2.20
@@ -1861,11 +1861,6 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
   typescript@7.0.2:
     resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
     engines: {node: '>=16.20.0'}
@@ -2100,16 +2095,16 @@ snapshots:
       vscode-languageserver-types: 3.18.4
       vscode-uri: 3.2.0
 
-  '@astrojs/markdown-remark@2.2.1(astro@2.10.15(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@astrojs/markdown-remark@2.2.1(astro@2.10.15)':
     dependencies:
       '@astrojs/prism': 2.1.2
-      astro: 2.10.15(supports-color@7.2.0)
+      astro: 2.10.15
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
       rehype-stringify: 9.0.4
-      remark-gfm: 3.0.1(supports-color@7.2.0)
-      remark-parse: 10.0.2(supports-color@7.2.0)
+      remark-gfm: 3.0.1
+      remark-parse: 10.0.2
       remark-rehype: 10.1.0
       remark-smartypants: 2.1.0
       shiki: 0.14.7
@@ -2123,20 +2118,20 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/svelte@3.1.1(astro@2.10.15(supports-color@7.2.0))(supports-color@7.2.0)(svelte@4.2.20)(typescript@5.9.3)(vite@4.5.14)':
+  '@astrojs/svelte@3.1.1(astro@2.10.15)(svelte@4.2.20)(typescript@7.0.2)(vite@4.5.14)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 2.5.3(supports-color@7.2.0)(svelte@4.2.20)(vite@4.5.14)
-      astro: 2.10.15(supports-color@7.2.0)
+      '@sveltejs/vite-plugin-svelte': 2.5.3(svelte@4.2.20)(vite@4.5.14)
+      astro: 2.10.15
       svelte: 4.2.20
-      svelte2tsx: 0.6.27(svelte@4.2.20)(typescript@5.9.3)
+      svelte2tsx: 0.6.27(svelte@4.2.20)(typescript@7.0.2)
     transitivePeerDependencies:
       - supports-color
       - typescript
       - vite
 
-  '@astrojs/tailwind@4.0.0(astro@2.10.15(supports-color@7.2.0))(tailwindcss@3.4.19(yaml@2.9.1))':
+  '@astrojs/tailwind@4.0.0(astro@2.10.15)(tailwindcss@3.4.19(yaml@2.9.1))':
     dependencies:
-      astro: 2.10.15(supports-color@7.2.0)
+      astro: 2.10.15
       autoprefixer: 10.6.1(postcss@8.5.30)
       postcss: 8.5.30
       postcss-load-config: 4.0.2(postcss@8.5.30)
@@ -2144,10 +2139,10 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  '@astrojs/telemetry@2.1.1(supports-color@7.2.0)':
+  '@astrojs/telemetry@2.1.1':
     dependencies:
       ci-info: 3.9.0
-      debug: 4.4.3(supports-color@7.2.0)
+      debug: 4.4.3
       dlv: 1.1.3
       dset: 3.1.4
       is-docker: 3.0.0
@@ -2169,20 +2164,20 @@ snapshots:
 
   '@babel/compat-data@7.29.7': {}
 
-  '@babel/core@7.29.7(supports-color@7.2.0)':
+  '@babel/core@7.29.7':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/generator': 7.29.8
       '@babel/helper-compilation-targets': 7.29.7
-      '@babel/helper-module-transforms': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
+      '@babel/helper-module-transforms': 7.29.7(@babel/core@7.29.7)
       '@babel/helpers': 7.29.10
       '@babel/parser': 7.29.9
       '@babel/template': 7.29.7
-      '@babel/traverse': 7.29.10(supports-color@7.2.0)
+      '@babel/traverse': 7.29.10
       '@babel/types': 7.29.8
       '@jridgewell/remapping': 2.3.5
       convert-source-map: 2.0.0
-      debug: 4.4.3(supports-color@7.2.0)
+      debug: 4.4.3
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -2211,19 +2206,19 @@ snapshots:
 
   '@babel/helper-globals@7.29.7': {}
 
-  '@babel/helper-module-imports@7.29.7(supports-color@7.2.0)':
+  '@babel/helper-module-imports@7.29.7':
     dependencies:
-      '@babel/traverse': 7.29.10(supports-color@7.2.0)
+      '@babel/traverse': 7.29.10
       '@babel/types': 7.29.8
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@babel/helper-module-transforms@7.29.7(@babel/core@7.29.7)':
     dependencies:
-      '@babel/core': 7.29.7(supports-color@7.2.0)
-      '@babel/helper-module-imports': 7.29.7(supports-color@7.2.0)
+      '@babel/core': 7.29.7
+      '@babel/helper-module-imports': 7.29.7
       '@babel/helper-validator-identifier': 7.29.7
-      '@babel/traverse': 7.29.10(supports-color@7.2.0)
+      '@babel/traverse': 7.29.10
     transitivePeerDependencies:
       - supports-color
 
@@ -2244,18 +2239,18 @@ snapshots:
     dependencies:
       '@babel/types': 7.29.8
 
-  '@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7(supports-color@7.2.0))':
+  '@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7)':
     dependencies:
-      '@babel/core': 7.29.7(supports-color@7.2.0)
+      '@babel/core': 7.29.7
       '@babel/helper-plugin-utils': 7.29.7
 
-  '@babel/plugin-transform-react-jsx@7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@babel/plugin-transform-react-jsx@7.29.7(@babel/core@7.29.7)':
     dependencies:
-      '@babel/core': 7.29.7(supports-color@7.2.0)
+      '@babel/core': 7.29.7
       '@babel/helper-annotate-as-pure': 7.29.7
-      '@babel/helper-module-imports': 7.29.7(supports-color@7.2.0)
+      '@babel/helper-module-imports': 7.29.7
       '@babel/helper-plugin-utils': 7.29.7
-      '@babel/plugin-syntax-jsx': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))
+      '@babel/plugin-syntax-jsx': 7.29.7(@babel/core@7.29.7)
       '@babel/types': 7.29.8
     transitivePeerDependencies:
       - supports-color
@@ -2266,7 +2261,7 @@ snapshots:
       '@babel/parser': 7.29.9
       '@babel/types': 7.29.8
 
-  '@babel/traverse@7.29.10(supports-color@7.2.0)':
+  '@babel/traverse@7.29.10':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/generator': 7.29.8
@@ -2274,7 +2269,7 @@ snapshots:
       '@babel/parser': 7.29.9
       '@babel/template': 7.29.7
       '@babel/types': 7.29.8
-      debug: 4.4.3(supports-color@7.2.0)
+      debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
@@ -2460,19 +2455,19 @@ snapshots:
 
   '@pkgr/core@0.1.2': {}
 
-  '@sveltejs/vite-plugin-svelte-inspector@1.0.4(@sveltejs/vite-plugin-svelte@2.5.3(supports-color@7.2.0)(svelte@4.2.20)(vite@4.5.14))(supports-color@7.2.0)(svelte@4.2.20)(vite@4.5.14)':
+  '@sveltejs/vite-plugin-svelte-inspector@1.0.4(@sveltejs/vite-plugin-svelte@2.5.3(svelte@4.2.20)(vite@4.5.14))(svelte@4.2.20)(vite@4.5.14)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 2.5.3(supports-color@7.2.0)(svelte@4.2.20)(vite@4.5.14)
-      debug: 4.4.3(supports-color@7.2.0)
+      '@sveltejs/vite-plugin-svelte': 2.5.3(svelte@4.2.20)(vite@4.5.14)
+      debug: 4.4.3
       svelte: 4.2.20
       vite: 4.5.14
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@2.5.3(supports-color@7.2.0)(svelte@4.2.20)(vite@4.5.14)':
+  '@sveltejs/vite-plugin-svelte@2.5.3(svelte@4.2.20)(vite@4.5.14)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 1.0.4(@sveltejs/vite-plugin-svelte@2.5.3(supports-color@7.2.0)(svelte@4.2.20)(vite@4.5.14))(supports-color@7.2.0)(svelte@4.2.20)(vite@4.5.14)
-      debug: 4.4.3(supports-color@7.2.0)
+      '@sveltejs/vite-plugin-svelte-inspector': 1.0.4(@sveltejs/vite-plugin-svelte@2.5.3(svelte@4.2.20)(vite@4.5.14))(svelte@4.2.20)(vite@4.5.14)
+      debug: 4.4.3
       deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.30.21
@@ -2645,19 +2640,19 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@2.10.15(supports-color@7.2.0):
+  astro@2.10.15:
     dependencies:
       '@astrojs/compiler': 1.8.2
       '@astrojs/internal-helpers': 0.1.2
       '@astrojs/language-server': 1.0.8
-      '@astrojs/markdown-remark': 2.2.1(astro@2.10.15(supports-color@7.2.0))(supports-color@7.2.0)
-      '@astrojs/telemetry': 2.1.1(supports-color@7.2.0)
+      '@astrojs/markdown-remark': 2.2.1(astro@2.10.15)
+      '@astrojs/telemetry': 2.1.1
       '@astrojs/webapi': 2.2.0
-      '@babel/core': 7.29.7(supports-color@7.2.0)
+      '@babel/core': 7.29.7
       '@babel/generator': 7.29.8
       '@babel/parser': 7.29.9
-      '@babel/plugin-transform-react-jsx': 7.29.7(@babel/core@7.29.7(supports-color@7.2.0))(supports-color@7.2.0)
-      '@babel/traverse': 7.29.10(supports-color@7.2.0)
+      '@babel/plugin-transform-react-jsx': 7.29.7(@babel/core@7.29.7)
+      '@babel/traverse': 7.29.10
       '@babel/types': 7.29.8
       '@types/babel__core': 7.20.5
       '@types/dom-view-transitions': 1.0.6
@@ -2668,7 +2663,7 @@ snapshots:
       ci-info: 3.9.0
       common-ancestor-path: 1.0.1
       cookie: 0.5.0
-      debug: 4.4.3(supports-color@7.2.0)
+      debug: 4.4.3
       devalue: 4.3.3
       diff: 5.2.2
       es-module-lexer: 1.7.0
@@ -2850,11 +2845,9 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  debug@4.4.3(supports-color@7.2.0):
+  debug@4.4.3:
     dependencies:
       ms: 2.1.3
-    optionalDependencies:
-      supports-color: 7.2.0
 
   decode-named-character-reference@1.3.0:
     dependencies:
@@ -3253,13 +3246,13 @@ snapshots:
       unist-util-is: 5.2.1
       unist-util-visit-parents: 5.1.3
 
-  mdast-util-from-markdown@1.3.1(supports-color@7.2.0):
+  mdast-util-from-markdown@1.3.1:
     dependencies:
       '@types/mdast': 3.0.15
       '@types/unist': 2.0.11
       decode-named-character-reference: 1.3.0
       mdast-util-to-string: 3.2.0
-      micromark: 3.2.0(supports-color@7.2.0)
+      micromark: 3.2.0
       micromark-util-decode-numeric-character-reference: 1.1.0
       micromark-util-decode-string: 1.1.0
       micromark-util-normalize-identifier: 1.1.0
@@ -3288,11 +3281,11 @@ snapshots:
       '@types/mdast': 3.0.15
       mdast-util-to-markdown: 1.5.0
 
-  mdast-util-gfm-table@1.0.7(supports-color@7.2.0):
+  mdast-util-gfm-table@1.0.7:
     dependencies:
       '@types/mdast': 3.0.15
       markdown-table: 3.0.4
-      mdast-util-from-markdown: 1.3.1(supports-color@7.2.0)
+      mdast-util-from-markdown: 1.3.1
       mdast-util-to-markdown: 1.5.0
     transitivePeerDependencies:
       - supports-color
@@ -3302,13 +3295,13 @@ snapshots:
       '@types/mdast': 3.0.15
       mdast-util-to-markdown: 1.5.0
 
-  mdast-util-gfm@2.0.2(supports-color@7.2.0):
+  mdast-util-gfm@2.0.2:
     dependencies:
-      mdast-util-from-markdown: 1.3.1(supports-color@7.2.0)
+      mdast-util-from-markdown: 1.3.1
       mdast-util-gfm-autolink-literal: 1.0.3
       mdast-util-gfm-footnote: 1.0.2
       mdast-util-gfm-strikethrough: 1.0.3
-      mdast-util-gfm-table: 1.0.7(supports-color@7.2.0)
+      mdast-util-gfm-table: 1.0.7
       mdast-util-gfm-task-list-item: 1.0.2
       mdast-util-to-markdown: 1.5.0
     transitivePeerDependencies:
@@ -3520,10 +3513,10 @@ snapshots:
 
   micromark-util-types@1.1.0: {}
 
-  micromark@3.2.0(supports-color@7.2.0):
+  micromark@3.2.0:
     dependencies:
       '@types/debug': 4.1.13
-      debug: 4.4.3(supports-color@7.2.0)
+      debug: 4.4.3
       decode-named-character-reference: 1.3.0
       micromark-core-commonmark: 1.1.0
       micromark-factory-space: 1.1.0
@@ -3785,19 +3778,19 @@ snapshots:
       rehype-stringify: 9.0.4
       unified: 10.1.2
 
-  remark-gfm@3.0.1(supports-color@7.2.0):
+  remark-gfm@3.0.1:
     dependencies:
       '@types/mdast': 3.0.15
-      mdast-util-gfm: 2.0.2(supports-color@7.2.0)
+      mdast-util-gfm: 2.0.2
       micromark-extension-gfm: 2.0.3
       unified: 10.1.2
     transitivePeerDependencies:
       - supports-color
 
-  remark-parse@10.0.2(supports-color@7.2.0):
+  remark-parse@10.0.2:
     dependencies:
       '@types/mdast': 3.0.15
-      mdast-util-from-markdown: 1.3.1(supports-color@7.2.0)
+      mdast-util-from-markdown: 1.3.1
       unified: 10.1.2
     transitivePeerDependencies:
       - supports-color
@@ -3975,12 +3968,12 @@ snapshots:
     dependencies:
       svelte: 4.2.20
 
-  svelte2tsx@0.6.27(svelte@4.2.20)(typescript@5.9.3):
+  svelte2tsx@0.6.27(svelte@4.2.20)(typescript@7.0.2):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 4.2.20
-      typescript: 5.9.3
+      typescript: 7.0.2
 
   svelte@4.2.20:
     dependencies:
@@ -4069,8 +4062,6 @@ snapshots:
   type-fest@0.13.1: {}
 
   type-fest@2.19.0: {}
-
-  typescript@5.9.3: {}
 
   typescript@7.0.2:
     optionalDependencies:
